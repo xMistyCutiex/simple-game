@@ -1,12 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
-#game {
+.game {
     width: 500px;
     height: 200px;
     border: 1px solid black;
+    margin: auto;
 }
 
 #character {
@@ -18,7 +20,7 @@
 }
 
 .animate {
-    animation: jump 500s;
+    animation: jump 0.3s linear;
 }
 
 @keyframes jump {
@@ -42,15 +44,19 @@
     background-color: lightblue;
     position: relative;
     top: 130px;
-    left: 480px;
+    left: 500px;
     animation: block 1s infinite line;
 }
 
 @keyframes block {
     0% {
-        left: 480px;
+        left: 500px;
     }
     100% {
-        left: -40px;
+        left: -20px;
     }
+}
+
+p {
+    text-align: center;
 }
