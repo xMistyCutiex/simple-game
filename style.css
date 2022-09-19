@@ -14,7 +14,7 @@
 #character {
     width: 20px;
     height: 50px;
-    background-color: royalblue;
+    background-color: rgb(123, 35, 95);
     position: relative;
     top: 150px;
 }
@@ -39,21 +39,21 @@
 }
 
 #block {
+    background-color: rgb(72, 136, 183);
     width: 20px;
     height: 20px;
-    background-color: lightblue;
     position: relative;
     top: 130px;
     left: 500px;
-    animation: block 1s infinite line;
+    animation: block 1s infinite linear;
 }
 
 @keyframes block {
     0% {
-        left: 500px;
+        left: 500px
     }
     100% {
-        left: -20px;
+        left: -20px
     }
 }
 
